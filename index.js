@@ -9,3 +9,7 @@ const parseJson = (text) => {
 }
 
 // console.log(parseJson('{ "abc": {"bruh": null}, "asd": false, "bruh": [123, "sad", {"brui": 213.234}] }'))
+
+if (typeof module !== 'undefined' && typeof module.exports !== 'undefined')
+    module.exports = {parseJson}
+
